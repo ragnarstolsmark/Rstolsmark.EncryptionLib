@@ -36,7 +36,8 @@ namespace Rstolsmark.EncryptionLib
                 };
             }
         }
-         public static string Decrypt(string encryptedData, string key){
+        
+        public static string Decrypt(string encryptedData, string key){
              using(Aes myAes = Aes.Create()){
                  myAes.Key = Convert.FromBase64String(key);
                  byte[] iVAndData = Convert.FromBase64String(encryptedData);
