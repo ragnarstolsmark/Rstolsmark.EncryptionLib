@@ -6,7 +6,7 @@
 
   <PropertyGroup>
     <PackageId>Rstolsmark.EncryptionLib</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>ragnarstolsmark</Authors>
     <Company>Rstolsmark</Company>
     <Description>A library for encrypting and decrypting strings using AES.</Description>
@@ -14,5 +14,9 @@
     <RepositoryUrl>https://github.com/ragnarstolsmark/Rstolsmark.EncryptionLib</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation" Version="2.2.0" />
+  </ItemGroup>
 
 </Project>
